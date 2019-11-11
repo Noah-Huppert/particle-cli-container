@@ -11,14 +11,18 @@ Container which runs the [Particle CLI](https://docs.particle.io/tutorials/devel
 
 # Use
 Run the container by invoking the `bin/particle` script in this repository. Pass
-argument to this script like you would to the Particle CLI.  
+arguments to this script like you would to the Particle CLI.  
 
-The current working directory is mounted in the container under the `/mnt` 
-directory. Do not provide absolute paths to the Particle CLI container as they 
-will be interpreted as paths inside the container's file system. 
+The working directory the script was run from is mounted in the container under 
+the `/mnt` directory. The Particle CLI is invoked within this directory in the 
+container. 
+
+It is recommended that you do not provide absolute paths to the Particle CLI 
+container as they will be interpreted as paths inside the container's 
+file system. 
 
 # Install
-I f you would like to invoke the Particle CLI via this container from any 
+If you would like to invoke the Particle CLI via this container from any 
 location in your shell you have 2 options:
 
 ## Install Option 1 - Add to `PATH`
