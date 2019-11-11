@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# particle - Run CLI in container
+podman run -it --rm -v "$PWD:/mnt" noahhuppert/particle-cli:latest $@
