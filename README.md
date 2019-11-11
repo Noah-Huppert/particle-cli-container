@@ -31,7 +31,7 @@ Add the `bin` directory in this repository to your path.
 Place the following in your shell profile:
 
 ```
-export PATH="$PATH:/path/to/this/repo/bin`
+export PATH="$PATH:/path/to/this/repo/bin"
 ```
 
 ## Install Option 2 - Symlink
